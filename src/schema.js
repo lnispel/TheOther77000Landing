@@ -8,12 +8,11 @@ import graphql, {
   GraphQLList,
   GraphQLNonNull
 } from 'graphql';
-require('dotenv').config();
-
-const Promise = require("bluebird");
-const firebase = require("firebase");
+import Promise from 'bluebird';
+import firebase from 'firebase';
 // Required for side-effects
-require("firebase/firestore");
+import 'firebase/firestore';
+require('dotenv').config();
 
 firebase.initializeApp({
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,

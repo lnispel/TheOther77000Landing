@@ -4,6 +4,7 @@ import '../App.css';
 import {Map, Marker, GoogleApiWrapper, InfoWindow} from 'google-maps-react';
 import GoogleMapsStyle from '../GoogleMapsStyle';
 import moment from 'moment';
+require('dotenv').config();
 
 export class GoogleMapsContainer extends Component {
   constructor(props) {
@@ -127,6 +128,11 @@ export class GoogleMapsContainer extends Component {
   }
 }
 
+if (process.env.REACT_APP_TEST) {
+} else {
+  console.log('nope')
+}
+
 export default GoogleApiWrapper({
-  apiKey: ('AIzaSyADLFEXfzHMBYSnxIC3dp6bLK4CVXvTyo4')
+  apiKey: (process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
 })(GoogleMapsContainer)
