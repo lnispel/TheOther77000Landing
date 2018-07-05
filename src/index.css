@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+  font-family: 'futura-pt', sans-serif;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+    image-orientation: from-image;
+}
