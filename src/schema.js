@@ -15,16 +15,10 @@ const firebase = require("firebase");
 // Required for side-effects
 require("firebase/firestore");
 
-if(process.env.TEST) {
-  console.log('Process variables set')
-} else {
-  console.log('Process variables not set')
-}
-
 firebase.initializeApp({
-  apiKey: process.env.FIREBASE_DOMAINAPI_KEY,
-  authDomain: process.env.FIREBASE_DOMAIN,
-  projectId: '"' + process.env.FIREBASE_PROJECTID + '"'
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECTID
 });
 
 // Initialize Cloud Firestore through Firebase

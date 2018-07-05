@@ -1,0 +1,6 @@
+export aws_access_key_id=AKIAJVYMSXUQV2NAA2IQ
+export aws_secret_access_key=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
+export FIREBASE_API_KEY=AIzaSyDYyv0C_TH900q4_oJu1yoFsqZ9Lf05yP8
+export FIREBASE_DOMAIN=the-other-77000.firebaseapp.com
+export FIREBASE_PROJECTID=the-other-77000
+export TEST=Gotit

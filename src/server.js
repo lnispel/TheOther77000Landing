@@ -4,7 +4,6 @@ import bodyParser from 'body-parser';
 import schema from './schema';
 
 const GRAPHQL_PORT = 4000;
-
 const graphQLServer = express();
 
 graphQLServer.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));

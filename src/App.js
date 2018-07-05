@@ -9,7 +9,6 @@ import { graphql } from 'graphql';
 import schema from './schema.js';
 import './App.css';
 
-
 class App extends Component {
   constructor(props) {
     super(props)

@@ -1,8 +1,8 @@
 import AWS from 'aws-sdk';
 
 AWS.config = new AWS.Config();
-AWS.config.accessKeyId = process.env.aws_access_key_id;
-AWS.config.secretAccessKey = process.env.aws_secret_access_key;
+AWS.config.accessKeyId = process.env.REACT_APP_aws_access_key_id;
+AWS.config.secretAccessKey = process.env.REACT_APP_aws_secret_access_key;
 AWS.config.region = "us-west-2";
 AWS.config.apiVersions = {
   "s3": "2006-03-01"
