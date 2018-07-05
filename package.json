@@ -44,7 +44,7 @@
     ]
   },
   "scripts": {
-    "start": "concurrently --kill-others \"react-scripts start\" \"nodemon ./src/server.js --exec babel-node --command download\"",
+    "start": "concurrently --kill-others \"react-scripts start\" \"nodemon ./src/server.js --exec babel-node\"",
     "build": "react-scripts build",
     "test": "mocha --compilers .:tests/compiler.js tests/*test.js",
     "eject": "react-scripts eject"

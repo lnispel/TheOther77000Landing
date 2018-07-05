@@ -15,9 +15,15 @@ const firebase = require("firebase");
 // Required for side-effects
 require("firebase/firestore");
 
+if(process.env.TEST) {
+  console.log('Process variables set')
+} else {
+  console.log('Process variables not set')
+}
+
 firebase.initializeApp({
-  apiKey: process.env.FIREBEASE_DOMAINAPI_KEY,
-  authDomain: process.env.FIREBEASE_DOMAIN,
+  apiKey: process.env.FIREBASE_DOMAINAPI_KEY,
+  authDomain: process.env.FIREBASE_DOMAIN,
   projectId: '"' + process.env.FIREBASE_PROJECTID + '"'
 });
 
